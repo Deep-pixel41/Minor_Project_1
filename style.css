@@ -7,7 +7,7 @@
 
 /* For adding background image  */
 body {
-    background-image: url("/google_backgroung_img2.jpg");
+    background-image: url("google_backgroung_img2.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -228,4 +228,5 @@ body {
 
 .text_shortcut {
     font-size: 0.7rem;
+
 }
