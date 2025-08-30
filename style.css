@@ -1,0 +1,231 @@
+/* Reset small issues */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* For adding background image  */
+body {
+    background-image: url("/google_backgroung_img2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* For navigation bar */
+.nav_bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav_bar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+
+.border_effect1:hover {
+    text-decoration: underline;
+}
+
+.setting_area {
+    height: 35px;
+    width: 35px;
+    border: 0.5px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.nav_bar .setting_area:hover {
+   
+    background-color: rgba(202, 197, 197, 0.3);
+}
+
+.profile_img {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main Content */
+.rest_all_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.google_name {
+    width: 400px;
+    max-width: 80%;
+    aspect-ratio: 3 / 1;
+    /* keeps logo ratio */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+.search_logo,
+.mic_logo,
+.lens_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    font-size: 1.1rem;
+    color: #5f6368;
+}
+
+.main_searchbar {
+    flex: 1;
+}
+
+.inside_searchbar {
+    width: 100%;
+    height: 48px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 0 5px;
+}
+
+/* Add Shortcut */
+.add_shortcut {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+}
+
+.add_shortcut:hover {
+    transform: scale(1.05);
+    border: 3px solid rgb(26, 55, 135);
+    border-radius: 1rem;
+}
+
+.inside_addshortcut {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #20467E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.text_shortcut {
+    font-size: 0.85rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* Footer Edit Button */
+.edit_buttom {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: rgb(177, 189, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .search_bar {
+        max-width: 600px;
+    }
+
+    .google_name {
+        width: 220px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .nav_bar a {
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+
+    .search_bar {
+        max-width: 95%;
+    }
+
+    .inside_searchbar {
+        font-size: 0.9rem;
+    }
+
+    .google_name {
+        width: 200px;
+        margin-top: 40px;
+    }
+
+    .add_shortcut {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+    .nav_bar {
+        justify-content: space-between;
+    }
+}
+
+*/ .search_bar {
+    max-width: 90%;
+    padding: 0 5px;
+}
+
+.google_name {
+    width: 150px;
+    margin-top: 30px;
+}
+
+.add_shortcut {
+    height: 90px;
+    width: 90px;
+}
+
+.text_shortcut {
+    font-size: 0.7rem;
+}
