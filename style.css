@@ -87,6 +87,9 @@ body {
     margin-top: 40px;
     padding: 0 10px;
 }
+.main_searchbar:hover{
+    border: 2px solid black;
+}
 
 .search_logo,
 .mic_logo,
@@ -230,3 +233,4 @@ body {
     font-size: 0.7rem;
 
 }
+
